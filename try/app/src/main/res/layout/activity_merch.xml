@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/ScrollView01"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_all"
+    tools:context=".MerchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+            <TextView
+                android:id="@+id/home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="60dp"
+                android:gravity="center"
+                android:text="Store"
+                android:textColor="@color/white"
+                android:textSize="45sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="50dp"
+                android:maxHeight="100dp"
+                android:onClick="LaunchShoppingCart"
+                android:src="@drawable/cart" />
+
+        </RelativeLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F0000000"
+                android:onClick="LaunchTshirtsMerch">
+
+                <TextView
+                    android:id="@+id/topmerch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="LaunchTshirtsMerch"
+                    android:text="T-Shirts Merch"
+                    android:textColor="@color/white"
+                    android:textSize="27sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/topmerch"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="New styles and iconic \nclassics"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="15sp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="141dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="-17dp"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/tshirt1" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F0000000"
+                android:onClick="LaunchHoodiesMerch">
+
+
+                <ImageView
+                    android:layout_width="142dp"
+                    android:layout_height="match_parent"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/hoodie1">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/tnbands"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:onClick="LaunchHoodiesMerch"
+                    android:text="Hoodies Merch"
+                    android:textColor="@color/white"
+                    android:textSize="27sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="216dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tnbands"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Layer up with stylish \ngoth hoodies"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="15sp">
+
+                </TextView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F0000000"
+                android:onClick="LaunchCorsetsMerch">
+
+                <TextView
+                    android:id="@+id/corsets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="LaunchCorsetsMerch"
+                    android:text="Vintage Corsets"
+                    android:textColor="@color/white"
+                    android:textSize="27sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/corsets"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Browse our collection of\n punk corsets"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="15sp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="141dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="-13dp"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/corset1">
+
+                </ImageView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F0000000"
+                android:onClick="LaunchAccessories">
+
+
+                <ImageView
+                    android:layout_width="142dp"
+                    android:layout_height="match_parent"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/accessories">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/accessories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="45dp"
+                    android:onClick="LaunchAccessories"
+                    android:text="Accessories"
+                    android:textColor="@color/white"
+                    android:textSize="27sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="216dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/accessories"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:text="Punk accessories for the\nmetalheads browse for more"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="15sp">
+
+                </TextView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F0000000">
+
+                <TextView
+                    android:id="@+id/skirts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Goth Skirts"
+                    android:textColor="@color/white"
+                    android:textSize="27sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/skirts"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Check Some of the coolest\ngoth skirts"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="15sp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="141dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="-13dp"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/skirt1">
+
+                </ImageView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+</ScrollView>

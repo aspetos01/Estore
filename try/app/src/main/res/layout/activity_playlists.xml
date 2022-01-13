@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_all"
+            tools:context=".PlaylistsActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="60dp"
+                    android:gravity="center"
+                    android:text="Playlists"
+                    android:textColor="@color/white"
+                    android:textSize="45sp"
+                    android:textStyle="bold" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    app:cardCornerRadius="30dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#F0000000">
+
+                        <TextView
+                            android:id="@+id/topmerch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Death Metal"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/topmerch"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Cannibal Corpse, Morbid\nangels, Carcass"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="20sp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="141dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-6dp"
+                            android:maxHeight="100dp"
+                            android:src="@drawable/ic_baseline_play_arrow_24">
+
+                        </ImageView>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    app:cardCornerRadius="30dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#F0000000">
+
+
+                        <ImageView
+                            android:layout_width="142dp"
+                            android:layout_height="match_parent"
+                            android:maxHeight="100dp"
+                            android:src="@drawable/ic_baseline_play_arrow_24">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/tnbands"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="15dp"
+                            android:text="Tunisian Bands"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="216dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tnbands"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="3dp"
+                            android:text="Myrath, Znous, \nOmination, Amazigh"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="20sp">
+
+                        </TextView>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="30dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#F0000000">
+
+                        <TextView
+                            android:id="@+id/topPlaylists"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Rock and Roll"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/topPlaylists"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:text="The rolling stones, the\n Beatles, ACDC, Pink Floyd"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="20sp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="141dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-13dp"
+                            android:maxHeight="100dp"
+                            android:src="@drawable/ic_baseline_play_arrow_24">
+
+                        </ImageView>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    app:cardCornerRadius="30dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#F0000000">
+
+
+                        <ImageView
+                            android:layout_width="142dp"
+                            android:layout_height="match_parent"
+                            android:maxHeight="100dp"
+                            android:src="@drawable/ic_baseline_play_arrow_24">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/topposts"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="15dp"
+                            android:text="Punk is not dead"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="216dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/topposts"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="3dp"
+                            android:text="The clash, Ramones\nGreen Day, Rancid"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="20sp">
+
+                        </TextView>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>

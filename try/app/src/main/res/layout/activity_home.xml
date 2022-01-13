@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_all"
+        tools:context=".HomeActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+                <TextView
+                    android:id="@+id/home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="60dp"
+                    android:gravity="center"
+                    android:text="Home"
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginRight="50dp"
+                    android:maxHeight="100dp"
+                    android:onClick="LaunchShoppingCart"
+                    android:src="@drawable/cart" />
+
+            </RelativeLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="40dp">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#F0000000"
+                    android:onClick="LaunchMerch">
+
+
+                    <Button
+                        android:id="@+id/topmerch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="#0F0F0F"
+                        android:text="Top Merch"
+                        android:textColor="@color/white"
+                        android:textSize="23sp"
+                        app:rippleColor="#FFFFFF" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/topmerch"
+                        android:layout_marginLeft="20dp"
+                        android:text="Check out our most \nloved Merch"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="20sp">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="141dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="0dp"
+                        android:maxHeight="100dp"
+                        android:src="@drawable/acdc">
+
+                    </ImageView>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="30dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:background="#F0000000"
+                    android:onClick="LaunchPosts">
+
+
+                    <ImageView
+                        android:layout_width="141dp"
+                        android:layout_height="match_parent"
+                        android:maxHeight="100dp"
+                        android:src="@drawable/stone">
+
+                    </ImageView>
+
+                    <Button
+                        android:id="@+id/topPosts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="50dp"
+                        android:backgroundTint="#0F0F0F"
+                        android:onClick="LaunchPosts"
+                        android:text="Top Posts"
+                        android:textColor="@color/white"
+                        android:textSize="23sp"
+                        app:rippleColor="#FFFFFF" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/topPosts"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Check out our most \nread articles"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="20sp">
+
+                    </TextView>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="30dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="131dp"
+                    android:background="#F0000000"
+                    android:onClick="LaunchPlaylists">
+
+                    <Button
+                        android:id="@+id/topPlaylists"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="#0F0F0F"
+                        android:onClick="LaunchPlaylists"
+                        android:text="Top Playlists"
+                        android:textColor="@color/white"
+                        android:textSize="23sp"
+                        app:rippleColor="#FFFFFF" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/topPlaylists"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Check out some of\nour tunisian bands"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="20sp">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="142dp"
+                        android:layout_height="140dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="-9dp"
+                        android:maxHeight="100dp"
+                        android:src="@drawable/znous">
+
+                    </ImageView>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</ScrollView>

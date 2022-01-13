@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/ScrollView01"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_all"
+    tools:context=".PostsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="60dp"
+            android:gravity="center"
+            android:text="Posts and Articles"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F0000000">
+
+                <TextView
+                    android:id="@+id/topmerch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="SOAD"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/topmerch"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Read more"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="20sp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="141dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="-6dp"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/souad">
+
+                </ImageView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F0000000">
+
+
+                <ImageView
+                    android:layout_width="142dp"
+                    android:layout_height="match_parent"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/haggard">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/topposts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="70dp"
+                    android:text="HAGGARD"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/topposts"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="110dp"
+                    android:text="Read more"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="20sp">
+
+                </TextView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F0000000">
+
+                <TextView
+                    android:id="@+id/topPlaylists"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="MUSE"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/topPlaylists"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Read more"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="20sp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="141dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="-13dp"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/muse">
+
+                </ImageView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F0000000">
+
+
+                <ImageView
+                    android:layout_width="142dp"
+                    android:layout_height="match_parent"
+                    android:maxHeight="100dp"
+                    android:src="@drawable/myrath">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/myrath"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="70dp"
+                    android:text="MYRATH"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/myrath"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="110dp"
+                    android:text="Read more"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="20sp">
+
+                </TextView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+</ScrollView>
